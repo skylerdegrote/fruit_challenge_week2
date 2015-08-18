@@ -129,7 +129,7 @@ console.log(apples);
 	 $("#sellApple").on('click',function(){
 	 	if (numApples>0){
 	 	cash+=apples.price;
-	 	totalApples--;
+	 	numApples--;
 	 	soldApples++;
 	 	avgApples+=apples.price;
 	 	$("#applesbought").text(numApples);
@@ -152,6 +152,8 @@ console.log(apples);
 	 	alert("You got no Oranges!");
 	 }
 	});
+
+	  
 	  $("#sellBanana").on('click',function(){
 	 	if (numBanana>0){
 	 	cash+=bananas.price;
@@ -182,10 +184,4 @@ console.log(apples);
 
 
 });
-
-
-
-
-
-
 
